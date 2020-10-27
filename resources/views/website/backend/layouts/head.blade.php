@@ -26,4 +26,6 @@
 
     <!-- Custom Theme Style -->
     <link href="{{ asset('adminBackend/build/css/custom.min.css') }}" rel="stylesheet">
+    
+    <link href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" rel="stylesheet">
   </head>

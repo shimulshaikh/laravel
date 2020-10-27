@@ -17,7 +17,7 @@ class ProductCatagoryController extends Controller
     
 	public function index()
     {
-    	$productCategorys = ProductCatagory::latest()->get();
+    	$productCategorys = ProductCatagory::all();
         return view('website.backend.productCategory.index', compact('productCategorys'));
     }
 

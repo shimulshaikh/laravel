@@ -1,4 +1,7 @@
-    <script src="{{ asset('adminBackend/vendors/jquery/dist/jquery.min.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+<!-- 
+    <script src="{{ asset('adminBackend/vendors/jquery/dist/jquery.min.js') }}"></script> -->
     <!-- Bootstrap -->
     <script src="{{ asset('adminBackend/vendors/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
     <!-- FastClick -->
@@ -33,10 +36,13 @@
     <script src="{{ asset('adminBackend/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js') }}"></script>
     <!-- bootstrap-daterangepicker -->
     <script src="{{ asset('adminBackend/vendors/moment/min/moment.min.js') }}"></script>
-    <script src="{{ asset('adminBackend') }}{{ asset('adminBackend') }}../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="{{ asset('adminBackend') }}../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
     <!-- Custom Theme Scripts -->
     <script src="{{ asset('adminBackend/build/js/custom.min.js') }}"></script>
+
+    
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 
 
     <!-- start Image upload -->
@@ -54,4 +60,11 @@
             }
         }
     </script>
-    <!-- End Image upload -->
+
+    <!-- Start Yajrabox datatable -->
+    <script type="text/javascript">
+        $(document).ready( function () {
+             $('#myTable').DataTable();
+        } );    
+    </script>
+    

@@ -4,7 +4,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Faker\Factory as Faker;
 
-class productCategorySeeder extends Seeder
+class ProductTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,8 +17,11 @@ class productCategorySeeder extends Seeder
 
         foreach (range(1, 2) as $index)
         {
-        	DB::table('product_catagories')->insert([
-	            'brandName' => $faker->company,
+        	DB::table('products')->insert([
+	            'productName' => $faker->name,
+	            'productDesc' => $faker->sentence(5),
+	            'price' => $faker->randomDigit,
+	            'categoryId' => App\ProductCatagory::inRandomOrder()->first()->id,
 	            'slug' => $faker->name
         	]);
         }

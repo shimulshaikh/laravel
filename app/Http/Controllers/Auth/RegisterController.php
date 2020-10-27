@@ -71,6 +71,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
 
+         // for update user
          $role = Role::select('id')->where('name', 'user')->first();
          $user->roles()->attach($role);
 
